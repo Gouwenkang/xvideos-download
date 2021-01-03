@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "xVideos视频下载插件",
+	"version": "1.0",
+	"description": "通过向xVideos视频页面注入JS获取视频接口信息，提取链接下载。",
+	"author": "kweku",
+	"permissions": [
+		"downloads"
+	],
+	"icons":
+	{
+		"16":"./img/xv16.png",
+		"32": "./img/xv32.png",
+		"128": "./img/xv128.png"
+	},
+	"browser_action":
+	{
+		"default_icon": "./img/xv16.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://www.xvideos.com/*"],
+			"js": ["content-script.js"]
+		}
+	],
+	"homepage_url": "https://kweku.top"
+}
