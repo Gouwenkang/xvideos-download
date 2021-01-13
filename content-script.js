@@ -1,6 +1,6 @@
 ﻿function getVideo() {
   return new Promise((resolve, reject) => {
-    console.log("=============================================");
+    
     const htmlText = document.documentElement.outerHTML;
     let videoHighReg = /setVideoUrlHigh\(\'([^)]*)\'\)/;
     let videolowReg = /setVideoUrlLow\(\'([^)]*)\'\)/;
